@@ -1,5 +1,7 @@
 # PPage
 
+## Leetcode: 2題
+## System Degin: 0
 
 ## site
 IGclone https://igclone918.herokuapp.com
