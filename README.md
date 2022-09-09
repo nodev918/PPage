@@ -19,12 +19,17 @@ QBlog https://qblog918.herokuapp.com
 ### FoodChat
 - Go / Kafka / Cassandra / Redis 
 
+## opensource (study)
+- K6 Load Test ( Golang js compiler )
+- Moby ( Golang docker opensource version )
+- RISV-V ( C opensource ISA )
+- RV32EMU ( C minimal OS kernel impl )
+- qemu ( C software emulator )
 
 ## skills
 ### Web
-1. JS: React
+1. JS: React / Redux
 2. CSS: MaterializeCSS / Material UI / Element UI 
-3. FP 
 
 ### GUI
 1. Java ( JFrame )
@@ -41,10 +46,17 @@ QBlog https://qblog918.herokuapp.com
 7. Database ( MSSQL / MYSQL / PostgreSQL / MongoDB / Cassandra )
 8. Cache ( Redis )
 
+### client api / library
+1. Google App Script
+2. Gmail API
+3. Google Sheet API
+4. Youtube API
+5. Testrail API
+
 ### Tests
 1. API Test ( Pytest )
 2. UI Test ( Cypress )
-3. TestRail API
+3. TestRail Client Web
 4. Load Test ( K6 js )
 5. Mock Server ( self impl )
 
