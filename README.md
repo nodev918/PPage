@@ -37,7 +37,7 @@ QBlog https://qblog918.herokuapp.com
 3. Python ( wxPython, Tkinter )
 4. C/C++ ( SDL2 )
 
-### Backend API/GUI
+### Backend API
 1. Golang / Gin
 3. C# ( dotnet core2 )
 4. Python ( Flask, Fastapi )
@@ -85,6 +85,9 @@ QBlog https://qblog918.herokuapp.com
 1. C/C++ ( little )
 2. Rust ( little )
 3. MASM
+4. linker script
+5. shell script
+6. Make
 
 ### Infra
 1. VM: Virtual Box / Multipass (Ubuntu Official)
