@@ -16,8 +16,12 @@ QBlog https://qblog918.herokuapp.com
 - MERN
 ### Java Chat Platform
 - Java Socket / Non blocking IO / JFrame GUI
+### QAuth
+- Go / Postgresql 
+### QChat 
+- Go / Postgresql 
 ### FoodChat
-- Go / Kafka / Cassandra / Redis 
+- Go / Kafka / Cassandra / Redis / docker
 
 ## opensource (study)
 - K6 Load Test ( Golang js compiler )
