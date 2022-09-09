@@ -80,6 +80,11 @@ QBlog https://qblog918.herokuapp.com
 1. UML: plantUML
 2. ER Model: ERD Editor
 
+### CICD
+1. Gitlab CI
+2. Gitlab Runner
+3. Github Action
+
 ### Protocol
 1. Websocket ( nodejs socketio )
 2. Tcp Socket ( Java socket )
