@@ -83,8 +83,9 @@ QBlog https://qblog918.herokuapp.com
 2. ER Model: ERD Editor
 
 ### CICD
-1. Gitlab CI
-2. Gitlab Runner
+1. CICD integration
+2. auto deploy
+3. Gitlab CI
 3. Github Action
 
 ### Protocol
