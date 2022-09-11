@@ -52,6 +52,16 @@ QBlog https://qblog918.herokuapp.com
 7. Database ( MSSQL / MYSQL / PostgreSQL / MongoDB / Cassandra )
 8. Cache ( Redis )
 
+### Infra & CICD
+1. VM: Virtual Box / Multipass (Ubuntu Official)
+2. docker: Docker / Moby (docker open source)
+3. Kubernetes( Kubelet, Minikube, Microk8s )
+4. AWS EC2 / Google GAE GCE / Linode
+5. Gitlab CI
+6. Github Action
+7. Automating deployments
+
+
 ### client api / library
 1. Google App Script
 2. Gmail API
@@ -82,11 +92,6 @@ QBlog https://qblog918.herokuapp.com
 1. UML: plantUML
 2. ER Model: ERD Editor
 
-### CICD
-1. CICD integration
-2. auto deploy
-3. Gitlab CI
-3. Github Action
 
 ### Protocol
 1. Websocket ( nodejs socketio )
@@ -101,8 +106,3 @@ QBlog https://qblog918.herokuapp.com
 5. shell script
 6. Make
 
-### Infra
-1. VM: Virtual Box / Multipass (Ubuntu Official)
-2. docker: Docker / Moby (docker open source)
-3. Kubernetes( Kubelet, Minikube, Microk8s )
-4. AWS EC2 / Google GAE GCE / Linode
