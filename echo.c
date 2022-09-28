@@ -4,8 +4,9 @@
 2. curl
 
 執行
-1. make run-server
-2. curl localhost:5003
+1. 將此程式碼複製下來,存成檔名 server.c
+2. make run-server
+3. curl localhost:5003
 */
 
 #include <stdio.h>
