@@ -1,4 +1,7 @@
 /*
+環境
+Ubuntu 20
+
 需要先安裝
 1. makefile
 2. curl
