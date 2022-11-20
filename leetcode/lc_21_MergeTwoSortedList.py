@@ -51,10 +51,14 @@ class Solution:
         while list1 and list2:               
             if list1.val < list2.val:
                 cur.next = list1
-                list1, cur = list1.next, list1
+                # list1, cur = list1.next, list1
+                cur = list1
+                list1 = list1.next
+                
             else:
                 cur.next = list2
-                list2, cur = list2.next, list2
+                cur = list2
+                list2 = list2.next
                 
         if list1 or list2:
             cur.next = list1 if list1 else list2
@@ -62,11 +66,36 @@ class Solution:
         return dummy.next
 
 
-s = Solution()
+class YMerge:
+    def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+        current = ListNode()
+        head = ListNode()
+        head = current
+        while list1 and list2:
+            if list1.val < list2.val:
+                current.next = list1
+                current = list1
+                list1 = list1.next
+            else:
+                current.next = list2
+                current = list2
+                list2 = list2.next
+        
+        if list1 or list2:
+            current.next = list1 if list1 else list2
+        
+        return head.next
+        
 
-l1 = List([1,2,4])
+
+l1 = List([1,2,2,4,5,6])
 l2 = List([1,3,4])
-
-solved_head = s.mergeTwoLists(l1.get_head(),l2.get_head())
-
+s = Solution()
+# solved_head = s.mergeTwoLists(l1.get_head(),l2.get_head())
+# show_list(solved_head)
+y = YMerge()
+solved_head = y.mergeTwoLists(l1.get_head(),l2.get_head())
+print(type(solved_head))
+# print(solved_head.val)
 show_list(solved_head)
+
