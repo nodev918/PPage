@@ -1,4 +1,4 @@
-const _ = require('lodash')
+
 const log = console.log
 
 class ListNode{
