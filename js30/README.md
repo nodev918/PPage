@@ -7,25 +7,33 @@ UI
 06 courasol
 
 功能
+https://juejin.cn/post/7031322059414175774#heading-6
 07 防抖 / 節流
 08 Fetch / Axios
-09 Promise
-10 DeepCopy
+09 Promise          (O)   
+10 RecursiveCopy
+11 limitRequest
+12 eventEmitter
 
 框架
-11 jQuery
-12 React-component
-13 React-render
-14 React-useState
-15 React-useEffect
-16 React-useContext
-17 React-useMemo
-18 React-useRef
-19 React-useCallback
-20 Redux
-21 RTk
-22 Rxjs
+13 jQuery           (O)
+14 React-component  (O)
+15 React-render     (O)
+https://www.youtube.com/watch?v=f2mMOiCSj5c&t=238&ab_channel=CodingTech
+16 React-reconcil
+17 React-diff
+18 React-fiber
+19 React-useState   (O)
+20 React-useEffect
+21 React-useContext
+22 React-useMemo
+23 React-useRef
+24 React-useCallback
+25 Redux            (O)
+26 RTk
+27 Rxjs
 
-23 expressjs server
-24 express router
-25 socketio
+後端
+28 expressjs server
+29 express router
+30 socketio
