@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     diff-lcs (1.5.0)
     rspec (3.12.0)
       rspec-core (~> 3.12.0)
@@ -18,13 +19,18 @@ GEM
     rspec-support (3.12.0)
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 
 PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   rspec (~> 3.0)
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 
