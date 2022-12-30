@@ -1,9 +1,49 @@
-ipl.bin: ipl.nas Makefile
-	./tools/nask.exe ipl.nas ipl.bin ipl.lst
+TOOLPATH	= ./tools/
+MAKE		= $(TOOLPATH)make.exe -r
+NASK     = $(TOOLPATH)nask.exe
+EDIMG    = $(TOOLPATH)edimg.exe
+IMGTOL   = $(TOOLPATH)imgtol.com
+COPY     = copy
+DEL      = del
 
-helloos.img: ipl.bin Makefile
-	./tools/edimg.exe imgin:./tools/fdimg0at.tek \
-		wbinimg src:ipl.bin len:512 from:0 to:0 imgout:helloos.img
 
-run: helloos.img
-	./tools/qemu.exe -L . -std-vga helloos.img
+
+default :
+	$(MAKE) img
+
+#
+
+ipl.bin : ipl.nas Makefile
+	$(NASK) ipl.nas ipl.bin ipl.lst
+
+haribote.sys : haribote.nas Makefile
+	$(NASK) haribote.nas haribote.sys haribote.lst
+
+haribote.img : ipl.bin haribote.sys Makefile
+	$(EDIMG)   imgin:./tools/fdimg0at.tek \
+		wbinimg src:ipl.bin len:512 from:0 to:0 \
+		copy from:haribote.sys to:@: \
+		imgout:haribote.img
+		
+#
+
+img :
+	$(MAKE) haribote.img
+
+run : haribote.img
+	$(MAKE) img
+	./tools/qemu.exe -L . -std-vga haribote.img
+
+install :
+	$(MAKE) img
+	$(IMGTOL) w a: haribote.img
+
+clean :
+	-$(DEL) ipl.bin
+	-$(DEL) ipl.lst
+	-$(DEL) haribote.sys
+	-$(DEL) haribote.lst
+
+src_only :
+	$(MAKE) clean
+	-$(DEL) haribote.img

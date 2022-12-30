@@ -59,6 +59,8 @@ type Statement struct {
 	row_to_insert Row
 }
 
+// define size_of_attribute(Struct, Attribute) sizeof(((Struct*)0)->Attribute)
+
 /* PrepareResult */
 type PrepareResult int
 

@@ -18,7 +18,11 @@ typedef enum {
   META_COMMAND_UNRECOGNIZED_COMMAND
 } MetaCommandResult;
 
-typedef enum { EXECUTE_SUCCESS, EXECUTE_TABLE_FULL } ExecuteResult;
+typedef enum { 
+  EXECUTE_SUCCESS, 
+  EXECUTE_TABLE_FULL 
+} ExecuteResult;
+
 typedef enum { 
   PREPARE_SUCCESS,
   PREPARE_NEGATIVE_ID, 
@@ -27,7 +31,10 @@ typedef enum {
   PREPARE_UNRECOGNIZED_STATEMENT 
 } PrepareResult;
 
-typedef enum { STATEMENT_INSERT, STATEMENT_SELECT } StatementType;
+typedef enum { 
+  STATEMENT_INSERT, 
+  STATEMENT_SELECT 
+} StatementType;
 
 #define COLUMN_USERNAME_SIZE 32
 #define COLUMN_EMAIL_SIZE 255
@@ -351,13 +358,8 @@ int main(int argc, char* argv[]) {
   char* filename = argv[1];
   Table* table = db_open(filename);
 
-  InputBuffer* input_buffer = new_input_buffer();
+  InputBuffer* input_buffer = new_input_buffer(); 
   int count = 0;
-//  printf("id_size: %d\n", ID_SIZE);
-//  printf("username_size: %d\n", USERNAME_SIZE);
-//  printf("email_size: %d\n", EMAIL_SIZE);
-//  printf("row_size: %d\n", ROW_SIZE);
-//  printf("table_max_rows: %lu\n", (unsigned long)TABLE_MAX_ROWS);  
 
   while (true) {
     print_prompt();
