@@ -7,7 +7,8 @@
 #define MIN 2
 
 struct BTreeNode {
-  int val[MAX + 1], count;
+  int val[MAX + 1]; 
+	int count;
   struct BTreeNode *link[MAX + 1];
 };
 
