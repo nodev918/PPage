@@ -13,3 +13,13 @@ nvim
 // if error: lack of ld > lstdc++
 1. sudo apt update
 2. sudo apt install build-essential
+
+
+setup
+1. set tabstop=2
+2. set shiftwidth=2
+3. set autoindent
+
+cheat sheet
+1. space s f
+2. 
