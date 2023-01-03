@@ -18,8 +18,12 @@ sudo apt install docker-compose
 lazydocker(){
 	
 }
-
 lazydocker
+
+install_go(){
+
+}
+install_go
 
 
 # saved setting
