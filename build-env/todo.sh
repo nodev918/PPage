@@ -1,3 +1,7 @@
+sudo apt update
+sudo apt install build-essential
+
+
 sudo apt install curl
 sudo apt install tmux
 sudo apt update
@@ -16,3 +20,9 @@ lazydocker(){
 }
 
 lazydocker
+
+
+# saved setting
+# GOPROXY
+# "https://goproxy.cn,direct"
+# https://proxy.golang.org,direct

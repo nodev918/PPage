@@ -1,0 +1,14 @@
+1
+2
+#
+
+if [ -f ~/.bash_profile ]; then
+  . ~/.bash_profile
+fi
+	
+
+# refresh ~/.bash_profile
+if [ -f ~/.bash_profile ]; then
+  . ~/.bash_profile
+fi
+	
