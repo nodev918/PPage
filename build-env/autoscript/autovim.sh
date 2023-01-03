@@ -30,7 +30,6 @@ else
 	echo "好ㄅ,保留原始.vimrc"
 fi
 
-sudo apt update
 sudo apt install make -y
 
 git config --global user.name $GIT_USER_NAME
